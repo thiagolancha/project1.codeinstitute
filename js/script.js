@@ -17,9 +17,9 @@
 
 /*nav*/
 
-/*text*/
+/*text typing auto*/
 
-  var TxtType = function(el, toRotate, period) {
+  var textAuto = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
       this.loopNum = 0;
@@ -29,14 +29,14 @@
       this.isDeleting = false;
   };
 
-  TxtType.prototype.tick = function() {
+  textAuto.prototype.tick = function() {
       var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
+      var fullText = this.toRotate[i];
 
       if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      this.txt = fullText.substring(0, this.txt.length - 1);
       } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      this.txt = fullText.substring(0, this.txt.length + 1);
       }
 
       this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
@@ -46,7 +46,7 @@
 
       if (this.isDeleting) { delta /= 2; }
 
-      if (!this.isDeleting && this.txt === fullTxt) {
+      if (!this.isDeleting && this.txt === fullText) {
       delta = this.period;
       this.isDeleting = true;
       } else if (this.isDeleting && this.txt === '') {
@@ -62,20 +62,19 @@
 
   window.onload = function() {
       var elements = document.getElementsByClassName('typewrite');
-      for (var i=0; i<elements.length; i++) {
+      for (var i = 0; i < elements.length; i++) {
           var toRotate = elements[i].getAttribute('data-type');
           var period = elements[i].getAttribute('data-period');
           if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
+            new textAuto(elements[i], JSON.parse(toRotate), period);
           }
       }
       var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.09em solid #FFF}";
       document.body.appendChild(css);
   };
 
-  /*text*/
+  /*text typing auto*/
 
   /*cod filter*/
 
@@ -120,3 +119,74 @@
   });
 
   /*cod filter media*/
+
+  /*calc form1*/
+  function MudaPreco(dataID, quantID, LabelID)
+      {
+          dataID = $('#dtTicket').val();
+          quantID = $('#quantTicket').val(22);
+
+
+          var Total = dataID * 22;
+
+          if (isNaN(Total)) {
+              document.getElementById(LabelID).innerHTML = "- -";
+          }
+          else {
+              document.getElementById(LabelID).innerHTML = formatDinheiro(Total, "€");
+          }
+      }
+
+      function formatDinheiro(n, currency) {
+          return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{2})+\.)/g, "€1,");
+      }
+/*calc form1*/
+/*calc form2*/
+function MudaPreco2(dataID2, quantID2, LabelID2)
+    {
+        dataID2 = $('#dtTicket2').val();
+        quantID2 = $('#quantTicket2').val(15);
+
+
+        var Total2 = dataID2 * 15;
+
+        if (isNaN(Total2)) {
+            document.getElementById(LabelID2).innerHTML = "- -";
+        }
+        else {
+            document.getElementById(LabelID2).innerHTML = formatDinheiro2(Total2, "€");
+        }
+    }
+
+    function formatDinheiro2(n, currency) {
+        return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{2})+\.)/g, "€1,");
+    }
+/*calc form2*/
+/*calc form3*/
+function MudaPreco3(dataID3, quantID3, LabelID3)
+    {
+        dataID3 = $('#dtTicket3').val();
+        quantID3 = $('#quantTicket3').val(18);
+
+
+        var Total3 = dataID3 * 18;
+
+        if (isNaN(Total3)) {
+            document.getElementById(LabelID3).innerHTML = "- -";
+        }
+        else {
+            document.getElementById(LabelID3).innerHTML = formatDinheiro3(Total3, "€");
+        }
+    }
+
+    function formatDinheiro3(n, currency) {
+        return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{2})+\.)/g, "€1,");
+    }
+/*calc form3*/
+
+/*func alert*/
+function func1()
+{
+  alert("Request Completed");
+}
+/*func alert*/

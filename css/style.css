@@ -184,11 +184,28 @@ nav ul li {
 }
 
 .titulocontact{
-  padding-top: 100px;
+  padding-top: 140px;
 }
 .calendar_tour {
   padding-top: 30px;
+  display: flex;
+  width: auto;
 }
+
+
+}
+.col-md-4 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.dataShow{
+  font-size: 18px;
+}
+.valueTicket {
+  font-size: 15px;
+}
+
 
 /* moving letter  */
 .letra {
@@ -558,6 +575,7 @@ h2 {
   -webkit-animation: move 4s;
   -webkit-animation-fill-mode: forwards;
   font-size: 20px;
+  font-size: 25px;
 }
 
 @keyframes move {
