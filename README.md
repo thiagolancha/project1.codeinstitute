@@ -7,6 +7,7 @@ The project comprises in a website for a band "The Rolling Stones". The language
 The entire project was done using 3 commits in GitHub, i tryed to do the entire raw project in the first commit to do all the adjustments needed in the next ones.
 Some functionalities are:
 - Contact form
+- Buy tickets form
 - Buttons
 - Links
 - Embed elements
