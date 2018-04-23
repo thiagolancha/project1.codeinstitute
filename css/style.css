@@ -224,7 +224,7 @@ nav ul li {
 }
 /* moving letter */
 
-/* bottom skill */
+/* button skill */
 .category_container {
   width: 90%;
   display: flex;
@@ -485,9 +485,9 @@ width: 100%;
   width: 15%;
   }
 }
-/* bottom skill */
+/* button skill */
 
-/* responsive bottom */
+/* responsive button */
 @media (min-width: 150px) and (max-width: 339px) {
   .btn-responsive {
     padding:1px 8px;
@@ -566,7 +566,7 @@ width: 100%;
       margin-right: 2px;
   }
 }
-/* responsive bottom */
+/* responsive button */
 
 /* letter moving  */
 
