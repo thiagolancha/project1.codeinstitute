@@ -2,11 +2,10 @@
 Full Stack Software Development course in Code Institute
 By Thiago Lancha
 
-View the project here: https://thiagolancha.github.io/project1.codeinstitute
+- View the project here: https://thiagolancha.github.io/project1.codeinstitute
 
 
-The project comprises in a website for a band "The Rolling Stones". 
-
+The project comprises in a website for a band "The Rolling Stones" with some funcionalities. 
 The design concept is based on a clean website with a modern style, conducted only in one page and adapted to all plataforms, phones, desktops, tables, etc.
 
 Technologies:
