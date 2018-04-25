@@ -2,9 +2,22 @@
 Full Stack Software Development course in Code Institute
 By Thiago Lancha
 
+View the project here: https://thiagolancha.github.io/project1.codeinstitute
 
-The project comprises in a website for a band "The Rolling Stones". The languages utilized to do the project was, HTML, CSS, JavaScript (Bootstrap and JQuery). The design concept is based on a clean website with a modern style, conducted only in one page and adapted to all plataforms, phones, desktops, tables, etc.
-The entire project was done using 3 commits in GitHub, i tryed to do the entire raw project in the first commit to do all the adjustments needed in the next ones.
+
+The project comprises in a website for a band "The Rolling Stones". 
+
+The design concept is based on a clean website with a modern style, conducted only in one page and adapted to all plataforms, phones, desktops, tables, etc.
+
+Technologies:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- JQuery
+- All images are from public websites in the internet
+- All videos are from Youtube
+
 Some functionalities are:
 - Contact form
 - Buy tickets form
@@ -16,4 +29,6 @@ Some functionalities are:
 - Animated bars
 - Etc
 
-All the code was based on my knowledge plus google searches.
+The website is hosted by GitHub Pages.
+
+
